@@ -1,0 +1,40 @@
+{
+  "name": "indoor-web-app",
+  "version": "1.0.3",
+  "description": "",
+  "main": "index.js",
+  "repository": "ce n est pas robot",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --host \"localhost\" --disable-host-check --port 81",
+    "stop": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.stop.js",
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
+    "test:watch": "npm run test -- --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "compression-webpack-plugin": "^1.1.12",
+    "webpack": "^1.15.0",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "dependencies": {
+    "@material-ui/core": "^1.4.1",
+    "@material-ui/icons": "^2.0.0",
+    "babel-preset-stage-1": "^6.1.18",
+    "lodash": "^3.10.1",
+    "material-ui": "^0.20.2",
+    "preact": "^8.3.1",
+    "preact-compat": "^3.18.3",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
+    "roslib": "^0.20.0"
+  }
+}

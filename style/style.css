@@ -1,0 +1,12 @@
+
+.visible {
+    display:'flex';
+}
+
+.hidden {
+    display:'none';
+}
+
+html { 
+   display:'none' !important;
+  }
